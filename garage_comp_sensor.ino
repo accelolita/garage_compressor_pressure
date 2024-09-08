@@ -1,5 +1,5 @@
 #include "Ambient.h"
-#include "secres.h"
+#include "secrets.h"
 WiFiClient client;
 Ambient ambient;
 
