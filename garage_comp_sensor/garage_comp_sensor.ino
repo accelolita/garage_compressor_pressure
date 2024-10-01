@@ -31,7 +31,7 @@ void loop() {
   }
   ave=sum/32;
   sum=0;
-  press=(float)ave;
+  press=map(ave,448,4033,10,1000000);
   Serial.println(press);  
   ambient.set(1, String(press).c_str());
   ambient.send();
