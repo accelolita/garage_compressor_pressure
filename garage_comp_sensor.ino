@@ -23,11 +23,11 @@ unsigned int sum=0,ave;
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for(int i=0;i<60;i++)
+  for(int i=0;i<32;i++)//28.8秒に一回送信
   {
     val=analogRead(33);
     sum+=(int)val;
-    delay(250);
+    delay(900);
   }
   ave=sum/60;
   sum=0;
