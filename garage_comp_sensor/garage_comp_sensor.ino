@@ -29,7 +29,7 @@ void loop() {
     sum+=(int)val;
     delay(900);
   }
-  ave=sum/60;
+  ave=sum/32;
   sum=0;
   press=(float)ave;
   Serial.println(press);  
